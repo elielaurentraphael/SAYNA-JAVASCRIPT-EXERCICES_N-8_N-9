@@ -4,3 +4,16 @@ for (let i = 3; i <= 7; i++) {
     console.log(i);
 }
 console.log("bye code-2");
+
+// salut code-2
+// programme forme France 
+// 3
+// programme forme France
+// 4
+// programme forme France
+// 5
+// programme forme France
+// 6
+// programme forme France
+// 7
+// bye code-2

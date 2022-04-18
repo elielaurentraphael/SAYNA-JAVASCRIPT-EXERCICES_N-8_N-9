@@ -4,3 +4,9 @@ for (let i = 1; i < 5; i++) {
     console.log(sum);
 }
 console.log("grand total : " + sum);
+
+// 1
+// 3
+// 6
+// 10
+// grand total : 10

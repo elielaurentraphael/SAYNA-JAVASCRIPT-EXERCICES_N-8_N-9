@@ -4,9 +4,8 @@
 
 function removeCapitals(chaine) {
     let chaino = "";
-    
-}
+};
 
-console.log(removeCapitals("fOrEver")) ; // 'frver'.
-console.log(removeCapitals("raiNCoat")) ; // "raioat".
-console.log(removeCapitals("clr Door")) ; // "clr oor
+console.log(removeCapitals("fOrEver")); // 'frver'.
+console.log(removeCapitals("raiNCoat")); // "raioat".
+console.log(removeCapitals("clr Door")); // "clr oor
