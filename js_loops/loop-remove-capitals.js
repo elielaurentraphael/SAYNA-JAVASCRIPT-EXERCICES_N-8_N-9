@@ -4,6 +4,12 @@
 
 function removeCapitals(chaine) {
     let chaino = "";
+    for (let i = 0; i < chaine.length; i++) {
+        if (chaine[i] === chaine[i].toLowerCase()) {
+            chaino += chaine[i];
+        }
+    }
+    return "'" + chaino + "'";
 };
 
 console.log(removeCapitals("fOrEver")); // 'frver'.

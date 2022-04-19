@@ -7,14 +7,11 @@ let restaurant = {
     création: 2011,
     menu: ["burgers", "frites", "milk-shakes"],
 };
-console.log("propriétaires"
-    dans le restaurant);
-console.log("employés"
-    dans restaurant);
+console.log(restaurant["propriétaires"]); // ["Bob Belcher", "Linda Belcher"]
+console.log(restaurant["employés"]); // undefined
 let someKey = "menu";
-console.log(someKey dans restaurant);
-console.log(restaurant.menu);
-console.log(restaurant["menu"]);
-console.log(restaurant[someKey]);
-console.log(restaurant.someKey);
-console.log(restaurant.menu.includes("fries"));
+console.log(restaurant.menu); // ["burgers", "frites", "milk-shakes"]
+console.log(restaurant["menu"]); // ["burgers", "frites", "milk-shakes"]
+console.log(restaurant[someKey]); // ["burgers", "frites", "milk-shakes"]
+console.log(restaurant.someKey); // undefined
+console.log(restaurant.menu.includes("fries")); // false
