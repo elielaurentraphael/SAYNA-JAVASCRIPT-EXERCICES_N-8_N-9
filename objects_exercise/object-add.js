@@ -15,17 +15,13 @@
 // console.log(objectAdd(obj3, obj4)); // { a : 3, b : 7, c : 0, e : 4};
 
 let objectAdd = function(objet1, objet2) {
-    let glum1 = [];
-    for (let x of Object.keys(objet1)) {
-        glum1.push(x);
-    }
-    let glum2 = [];
-    for (let x of Object.keys(objet2)) {
-        glum2.push(x);
-    }
 
 }
 
-let objet1 = { x: 3, y: 10 };
-let objet2 = { y: 2, x: 1 };
-console.log(objectAdd(objet1, objet2));
+let objet1 = { x: 3, y: 10, z: 7 };
+let objet2 = { y: 2, x: 1, r: 4 };
+console.log(objectAdd(objet1, objet2));// {x: 4, y: 12, z: 7, r: 4};
+
+let obj3 = { a: 3, b: 2, c: -1 };
+let obj4 = { b: 5, c: 1, e: 4 };
+console.log(objectAdd(obj3, obj4)); // { a: 3, b: 7, c: 0, e: 4};

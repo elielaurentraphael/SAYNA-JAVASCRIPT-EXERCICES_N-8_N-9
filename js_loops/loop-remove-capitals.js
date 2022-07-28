@@ -13,5 +13,7 @@ function removeCapitals(chaine) {
 };
 
 console.log(removeCapitals("fOrEver")); // 'frver'.
+console.log(" ");
 console.log(removeCapitals("raiNCoat")); // "raioat".
+console.log(" ");
 console.log(removeCapitals("clr Door")); // "clr oor

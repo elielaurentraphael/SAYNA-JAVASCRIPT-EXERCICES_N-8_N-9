@@ -24,4 +24,5 @@ let stringIterate = function(chaine) {
 }
 
 stringIterate("cement");
+console.log(" ");
 stringIterate("rat");

@@ -25,4 +25,5 @@ let reverseIterate = function(chaine) {
 }
 
 reverseIterate("carrot");
+console.log(" ");
 reverseIterate("box");

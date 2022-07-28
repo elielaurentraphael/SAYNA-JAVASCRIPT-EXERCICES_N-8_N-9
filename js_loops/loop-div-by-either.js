@@ -8,7 +8,6 @@
 
 // divByEither(4, 3, 16) ;
 // imprime
-// 3
 // 4
 // 6
 // 8
@@ -32,4 +31,5 @@ function divByEither(num1, num2, max) {
 }
 
 divByEither(4, 3, 16);
+console.log(" ");
 divByEither(7, 5, 20);

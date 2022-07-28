@@ -23,4 +23,5 @@ function divisibleRange(min, max, num) {
 }
 
 divisibleRange(17, 40, 9);
+console.log(" ");
 divisibleRange(10, 24, 4);

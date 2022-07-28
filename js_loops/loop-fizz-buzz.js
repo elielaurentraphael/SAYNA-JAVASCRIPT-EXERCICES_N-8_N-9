@@ -42,4 +42,5 @@ let fizzBuzz = function(max) {
 }
 
 fizzBuzz(18);
+console.log(" ");
 fizzBuzz(33);

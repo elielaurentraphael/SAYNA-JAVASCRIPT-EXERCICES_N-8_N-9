@@ -1,3 +1,5 @@
+// Faites une prédiction de ce qu'il va imprimer. Exécutez-le et comparez la prédiction et le résultat.
+
 console.log("salut code-2");
 for (let i = 3; i <= 7; i++) {
     console.log("programme forme France");

@@ -1,0 +1,469 @@
+Module : JavaScript
+Exercice n°8 - Loops
+
+
+
+Durée de l’exercice : 30min 
+Loops
+
+Les boucles sont pratiques, si vous voulez exécuter le même code encore et encore, chaque fois avec une valeur différente.
+
+Objectif de l'exercice : connaître et comprendre les boucles en JavaScript, comprendre le contrôle dans les boucles 
+(comment le code fonctionne dans les boucles).
+
+Énoncé : Suivez les étapes ci-dessous pour réaliser votre exercice.
+
+# créer un dossier js_loops à l'intérieur de ce dossier, créer les fichiers ci-dessous, taper le code, prédire le résultat 
+et le comparer avec le résultat de l'impression après avoir exécuté le code.
+
+Prédire le résultat et comparez avec le résultat imprimé après avoir exécuté le code # code-1.js. Faites une prédiction 
+de ce qu'il va imprimer. Exécutez-le.
+
+# code-1.js
+
+console.log("hello Friends") ;
+for (let i = 0 ; i < 5 ; i++) {
+console.log("code-1") ;
+}
+console.log("goodbye code-1") ;
+
+
+# code-2.js
+
+console.log("au revoir code-2") ;
+for (let i = 3 ; i <= 7 ; i++) {
+console.log("programme forme France") ;
+console.log(i) ;
+}
+console.log("bye code-2") ;
+
+
+#code-3.js
+
+let foo = fonction () {
+for (let num = 10 ; num > 0 ; num -= 2) {
+console.log(num) ;
+}
+} ;
+console.log("début") ;
+foo() ;
+console.log("end") ;
+foo() ;
+
+
+# code-4.js
+
+let word = "langue" ;
+for (let i = 0 ; i < word.length ; i++) {
+console.log(i) ;
+console.log(mot[i]) ;
+}
+
+
+#code-5.js
+
+let sum = 0 ;
+for (let i = 1 ; i < 5 ; i++) {
+sum += i ;
+console.log(sum) ;
+}
+console.log("grand total : " + somme) ;
+
+
+// Il est maintenant temps de montrer votre habileté en écrivant un code.
+
+#loop-one-to-six.js
+
+// Écrivez une fonction `oneToSix` qui imprime tous les nombres entiers de un à six, inclus. 
+// La fonction ne prend aucun argument et ne doit pas retourner de valeur. Elle doit juste s'afficher dans le terminal.
+
+oneToSix() ;
+// imprime
+// 1
+// 2
+// 3
+// 4
+
+
+#loop-min-to-max.js
+
+// Écrivez une fonction `minToMax(min, max)` qui accepte deux nombres comme arguments. 
+// La fonction doit imprimer tous les nombres de min à max inclus. 
+// La fonction n'a pas besoin de retourner une valeur. Elle doit simplement imprimer sur le terminal.
+
+minToMax(4, 12) ;
+// imprime
+// 4
+// 5
+// 6
+// 7
+// 8
+// 9
+// 10
+// 11
+// 12
+
+minToMax(11, 14) ;
+// imprime
+// 11
+// 12
+// 13
+// 14
+
+
+#loop-string-iterate.js
+
+// Écrivez une fonction `stringIterate` qui accepte une chaîne de caractères en tant qu’argument.
+// La fonction doit imprimer chaque caractère de la chaîne, un par un. 
+// La fonction n'a pas besoin de retourner une valeur. Elle doit simplement s'imprimer sur le terminal.
+
+stringIterate("cement") ;
+// imprime
+// c
+// e
+// m
+// e
+// n
+// t
+
+stringIterate("rat") ;
+// imprime
+// r
+// a
+// t
+
+
+#Créer un fichier loop-five-multiples-of.js et résoudre la fonction ci-dessous :
+
+// Ecrivez une fonction nommée `fiveMultiplesOf` qui accepte un nombre comme argument. 
+// La fonction doit imprimer les cinq premiers multiples du nombre donné. 
+// La fonction n'a pas besoin de retourner une valeur. Elle doit simplement s'afficher dans le terminal.
+
+cinqMultiplesOf(7) ;
+// imprime
+// 7
+// 14
+// 21
+// 28
+// 35
+
+cinqMultiplesDe(3) ;
+// imprime
+// 3
+// 6
+// 9
+// 12
+// 15
+
+
+# Créer un fichier loop-sum-up-to.js et résoudre la fonction ci-dessous.
+
+// Écrivez une fonction nommée `sumUpTo(max)` qui accepte un nombre max comme argument.
+// La fonction doit renvoyer la somme totale de tous les nombres entiers compris entre 1 et le max, inclus.
+// Par exemple, sumUpTo(4) doit renvoyer 10 car 1 + 2 + 3 + 4 = 10.
+
+console.log(sumUpTo(4)) ; // 10
+console.log(sumUpTo(5)) ; // 15
+console.log(sumUpTo(2)) ; // 3
+
+
+# Créer un fichier loop-div-by-either.js et résoudre la fonction ci-dessous.
+
+// Écrivez une fonction nommée `divByEither(num1, num2, max)`. Elle accepte trois nombres comme arguments.
+// La fonction doit afficher tous les nombres positifs inférieurs à max qui sont divisibles par num1 ou num2.
+// La fonction n'a pas besoin de renvoyer de valeur. Elle doit simplement s'afficher dans le terminal.
+
+divByEither(4, 3, 16) ;
+// imprime
+// 3
+// 4
+// 6
+// 8
+// 9
+// 12
+// 15
+
+divByEither(7, 5, 20) ;
+// imprime
+// 5
+// 7
+// 10
+// 14
+// 15
+
+
+# Créez un fichier loop-divisible-range.js et résolvez la fonction ci-dessous.
+
+// Écrivez une fonction `divisibleRange(min, max, num)` qui accepte trois nombres comme arguments.
+// La fonction doit imprimer tous les nombres compris entre `min` et `max` (exclusif) qui sont également divisibles 
+par num.
+
+divisibleRange(17, 40, 9) ;
+// imprime
+// 18
+// 27
+// 36
+
+divisibleRange(10, 24, 4) ;
+// imprime
+// 12
+// 16
+// 20
+
+
+# Créer un fichier reverse-iterate.js et résoudre la fonction ci-dessous.
+
+// Écrivez une fonction `reverseIterate` qui accepte une chaîne de caractères comme argument. 
+// La fonction doit imprimer les caractères de la chaîne un par un, dans l'ordre inverse. 
+// La fonction n'a pas besoin de retourner une valeur. Elle doit simplement s'afficher dans le terminal.
+
+reverseIterate("carrot") ;
+// imprime
+// t
+// o
+// r
+// r
+// a
+// c
+
+reverseIterate("box") ;
+// imprime
+// x
+// o
+// b
+
+
+# Créez un fichier loop-fizz-buzz.js et résolvez la fonction ci-dessous.
+
+// Ecrivez une fonction `fizzBuzz` qui accepte un nombre max comme argument. 
+// La fonction doit imprimer tous les nombres inférieurs ou égaux à max qui sont divisibles par 3 ou 5, 
+mais pas par 3 et 5.
+// La fonction n'a pas besoin de retourner une valeur. Elle doit simplement s'afficher dans le terminal.
+
+fizzBuzz(18) ;
+// imprime
+// 3
+// 5
+// 6
+// 9
+// 10
+// 12
+// 18
+
+fizzBuzz(33) ;
+// imprime
+// 3
+// 5
+// 6
+// 9
+// 10
+// 12
+// 18
+// 20
+// 21
+// 24
+// 25
+// 27
+// 33
+
+
+# Créez un fichier loop-remove-capitals.js et résolvez la fonction ci-dessous.
+
+// Écrivez une fonction `removeCapitals` qui accepte une chaîne de caractères comme argument. 
+// La fonction doit retourner une nouvelle version de la chaîne avec toutes les majuscules enlevées.
+
+console.log(removeCapitals("fOrEver")) ; // 'frver'.
+console.log(removeCapitals("raiNCoat")) ; // "raioat".
+console.log(removeCapitals("clr Door")) ; // "clr oor"
+
+
+
+
+
+Module : JavaScript
+Exercice n°9 - Objects
+
+
+Durée de l’exercice : 30min 
+Objects
+
+Alors que les tableaux utilisent des nombres pour indexer leurs valeurs, les objets utilisent des chaînes de caractères 
+pour indexer leurs valeurs. Ces chaînes de caractères sont appelées clés.
+{clé : valeur}
+
+Objectif de l'exercice : Les objets sont une construction que les programmeurs utilisent pour représenter des entités 
+et les propriétés qu'elles possèdent.
+
+Enoncé : Suivez les étapes ci-dessous pour réaliser votre exercice. Prédisez d'abord le résultat puis exécutez le code 
+dans le terminal et comparez votre prédiction.
+
+# créer un dossier objects_exercise dans ce dossier créer les fichiers ci-dessous, taper le code, prédisez le résultat 
+et comparez avec le résultat imprimé après avoir exécuté le code.
+
+
+# object-1.js
+
+let movie = {
+titre : "Fight Club",
+year : 1999,
+genre : ["drame", "thriller"],
+avec : ["Brad Pitt", "Edward Norton"],
+} ;
+console.log(movie.year) ;
+console.log(movie["title"]) ;
+console.log(movie.genre) ;
+console.log(movie.genre[0]) ;
+console.log(movie.genre[1]) ;
+console.log(movie.duration) ;
+console.log(movie["starring"][1]) ;
+console.log(movie.starring.length) ;
+
+
+# objet-2.js
+
+let restaurant = {
+nom : "Bob's Burgers",
+location : "123 Ocean Avenue",
+propriétaires : ["Bob Belcher", "Linda Belcher"],
+création : 2011,
+menu : ["burgers", "frites", "milk-shakes"],
+} ;
+console.log("propriétaires" dans le restaurant) ;
+console.log("employés" dans restaurant) ;
+let someKey = "menu" ;
+console.log(someKey dans restaurant) ;
+console.log(restaurant.menu) ;
+console.log(restaurant["menu"]) ;
+console.log(restaurant[someKey]) ;
+console.log(restaurant.someKey) ;
+console.log(restaurant.menu.includes("fries")) ;
+
+
+#objet-3.js
+
+let dog = {
+nom : "Manny",
+âge : 5,
+race : "carlin",
+couleur : "fawn",
+aliments préférés : ["bacon"],
+} ;
+console.log(chien.âge) ;
+console.log(chien.race) ;
+console.log(chien.favoriteFoods) ;
+chien.âge++ ;
+dog.breed = dog.breed.toUpperCase() ;
+dog.favoriteFoods.push("saucisse") ;
+console.log(chien.âge) ;
+console.log(chien.race) ;
+console.log(chien.favoriteFoods) ;
+for (let property in dog) {
+console.log(propriété + " est " + chien[propriété]) ;
+}
+
+
+#objet-4.js
+
+let recipe = {
+nom : "Crêpes à l'ancienne",
+difficulté : "facile",
+savoureux : true,
+ingrédients : ["œufs", "lait", "beurre", "farine", "sucre"],
+} ;
+console.log(recette.nom) ;
+console.log(recette["nom"]) ;
+console.log(recette.ingrédients.longueur) ;
+console.log(recette.calories) ;
+let someVariable = "difficulty" ;
+console.log(recette[someVariable]) ;
+console.log(recette.quelqueVariable) ;
+for (let i = 0 ; i < recipe.ingredients.length ; i++) {
+console.log(recette.ingrédients[i]) ;
+}
+
+
+Maintenant il est temps d'écrire un code(Practice ! Practice ! Practice !)
+
+Enregistrez les fichiers ci-dessous dans le dossier objects_exercise et écrivez le code exécuté pour voir le résultat. 
+Essayez de comprendre le contrôle du programme.
+
+
+# max-object-value.js
+
+// Ecrivez une fonction `maxObjectValue` qui accepte un objet comme un objet comme argument.
+// Ecrivez une fonction qui renvoie un tableau contenant la paire clé-valeur de la plus grande valeur pour la plus 
+grande valeur de l'objet. Vous pouvez supposer que toutes les valeurs sont des nombres et qu'il n'y a pas d'égalité.
+
+console.log(maxObjectValue({ a : 5, b : 2, c : 6, d : 7, e : 4 })) ; // ['d', 7]
+console.log(maxObjectValue({ litchi : 11, ramboutan : 13, papaye : 9 })) ; // ['ramboutan', 13]
+
+
+# key-pair.js
+
+// Écrivez une fonction `keyPair(obj1, obj2, key)` qui accepte deux objets et une chaîne de caractères comme arguments.
+// La fonction doit retourner un tableau contenant les valeurs de la clé donnée dans `obj1` et `obj2`.
+// Voir les exemples.
+
+let cat1 = { nom : "jinkee", race : "calico" } ;
+let cat2 = { name : "garfield", breed : "red tabby" } ;
+console.log(keyPair(cat1, cat2, "breed")) ; // [ 'calico', 'redtabby' ]
+console.log(keyPair(cat1, cat2, "name")) ; // [ 'jinkee', 'garfield' ]
+let sport1 = { nom : "volleyball", équipe : true } ;
+let sport2 = { nom : "golf", équipe : false } ;
+console.log(keyPair(sport1, sport2, "team")) ; // [ true, false ]
+
+
+# element-quantities.js
+
+// Créez une fonction `elementQuantities` qui accepte un objet comme argument. L'objet contient des éléments comme clés 
+et des quantités comme valeurs. 
+// La fonction doit retourner un tableau contenant les éléments qui apparaissant avec les quantités correctes. 
+// Voir les exemples.
+
+let quantities1 = { cat : 3, oiseau : 1, chien : 2 } ;
+console.log(elementQuantities(quantities1)) ; // ['cat', 'cat', 'chat', 'oiseau', 'chien', 'chien']
+let quantities2 = { blue : 3, marron : 1 } ;
+console.log(elementQuantities(quantities2)) ; // ['blue', 'blue', 'blue', 'brown']
+
+
+# object-add.js
+
+// Écrivez une fonction `objectAdd` qui accepte deux objets comme arguments. 
+// La fonction doit retourner un nouvel objet contenant les mêmes clés que les objets arguments. 
+// Si une clé est trouvée dans les deux objets, sa valeur correspondante doit être la somme des valeurs des arguments 
+de l'objet. 
+// Si une clé n'est trouvée que dans l'un des objets, la valeur correspondante doit être la même que celle de ce seul 
+objet.
+
+let obj1 = { x : 3, y : 10} ;
+let obj2 = { y : 2, x : 1} ;
+console.log(objectAdd(obj1, obj2)) ; // { x : 4, y : 12 }
+let obj3 = { a : 3, b : 2, c : -1} ;
+let obj4 = { b : 5, c : 1, e : 4} ;
+console.log(objectAdd(obj3, obj4)) ; // { a : 3, b : 7, c : 0, e : 4
+}
+
+
+# greatest-population.js
+
+// Ecrivez une fonction `greatestPopulation` qui accepte en argument un tableau d'objets pays comme argument.
+// La fonction doit retourner le nom du pays qui a la plus grande population.
+// Vous pouvez supposer que le tableau contient au moins un pays.
+
+let countries1 = [
+{ nom : "Cameroun", population : 27744989, PIB : 38.68 },
+{ nom : "Belarus", population : 9477918, pib : 59.66 },
+{nom : "Indonésie", population : 267026366, PIB : 1042 },
+{nom : "Guyane", population : 750204 750204, PIB : 3.88 },
+] ;
+console.log(greatestPopulation(countries1)) ; // 'Indonesia' (Indonésie)
+let countries1 = [
+{ nom : "Nouvelle-Zélande", population : 4925477, pib : 204,9 },
+{ nom : "Mozambique", population : 30098197, pib : 14.72 },
+{nom : "Groenland", population : 57616, PIB : 2,71 },
+{nom : "Kazakhstan", population : 19091949, PIB : 179.3 },
+{nom : "Birmanie", population : 56590071, PIB : 71.21 },
+] ;
+console.log(greatestPopulation(countries2)) ; // 'Birmanie'.
+
+Ci-dessous la progression du travail ---------------

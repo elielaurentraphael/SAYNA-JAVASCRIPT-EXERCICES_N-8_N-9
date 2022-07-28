@@ -26,4 +26,5 @@ let fiveMultiplesOf = function(nombre) {
 };
 
 fiveMultiplesOf(7);
+console.log(" ");
 fiveMultiplesOf(3);
